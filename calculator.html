@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- boot  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!--font cnd link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- js link  -->
+         <script src="./calculator.js"></script>
+</head>
+
+<body>
+
+    <div class="d-flex  align-items-center justify-content-center bg-dark" style="min-height: 100vh; ">
+        <div class="bg-light p-3 rounded">
+            <!-- inputbox -->
+            <input id="output" style="width: 213px; height: 70px; background-color: rgb(234, 226, 226);" placeholder="0" type="text"><br>
+
+            <!-- row1 -->
+            <button  class="mt-2 rounded" onclick="clearAllContent()"  style="color: orange; width: 50px; height: 50px;"><b>AC</b></button>
+
+            <button  class="rounded" onclick="removeLast()" style="color: orange; width: 50px; height: 50px;">
+                
+                   <i class="fa-solid fa-delete-left"></i></button>
+
+            <button onclick="displayContent('')"  class="rounded" style="color: orange; width: 50px; height: 50px;"><b>%</b></button>
+
+            <button onclick="displayContent('')"  class="rounded" style="color: orange; width: 50px; height: 50px;"><b>÷</b></button><br>
+
+            <!-- row2 -->
+            <button id="7" onclick="displayContent('7')"  class="mt-2 rounded" style="height: 50px; width: 50px;">7</button>
+
+            <button id="8" onclick="displayContent('8')"  class="rounded" style="height: 50px; width: 50px;">8</button>
+
+            <button  onclick="displayContent('9')" class="rounded" style="height: 50px; width: 50px;">9</button>
+
+            <button  onclick="displayContent('*')"  class="rounded" style="color: orange; width: 50px; height: 50px;"><b>x</b></button><br>
+
+            <!-- row3 -->
+            <button onclick="displayContent('4')"  class="mt-2 rounded" style="height: 50px; width: 50px;">4</button>
+
+            <button onclick="displayContent('5')"  class="rounded" style="height: 50px; width: 50px;">5</button>
+
+            <button onclick="displayContent('6')"  class="rounded" style="height: 50px; width: 50px;">6</button>
+
+            <button  onclick="displayContent('-')" class="rounded" style="color: orange; width: 50px;  height: 50px;"><b>-</b></button><br>
+
+            <!-- row4 -->
+            <button onclick="displayContent('1')"  class="mt-2 rounded" style="height: 50px; width: 50px;">1</button>
+
+            <button  onclick="displayContent('2')" class="rounded" style="height: 50px; width: 50px;">2</button>
+
+            <button  onclick="displayContent('3')" class="rounded" style="height: 50px; width: 50px;">3</button>
+
+            <button onclick="displayContent('+')"  class="rounded" style="color: orange; width: 50px; height: 50px;"><b>+</b></button><br>
+
+            <!-- row5 -->
+            <button  onclick="displayContent()"  class="mt-2 rounded" style="height: 50px; width: 50px;"><i
+                    class="fa-duotone fa-solid fa-rotate"></i></button>
+
+            <button   onclick="displayContent('0')" class="rounded" style="height: 50px; width: 50px;">0</button>
+
+            <button  onclick="displayContent('.')" class="rounded" style="height: 50px; width: 50px;"><b>.</b></button>
+
+            <button  onclick="showResult()" class="rounded"
+                style="background-color: orange; color: white; width: 50px;  height: 50px;"><b>=</b></button>
+
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
